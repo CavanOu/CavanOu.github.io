@@ -1,5 +1,5 @@
 import React from 'react'
-import { useState, useEffect, lazy } from 'react'
+import { lazy } from 'react'
 import { Route, Routes } from 'react-router'
 const Shouye = lazy(() => import('../pages/Shouye'))
 const Space = lazy(() => import('../pages/Space'))
@@ -12,14 +12,8 @@ const Youxi = lazy(() => import('../pages/Youxi'))
 const VideoDetail = lazy(() => import('../pages/VideoDetail'))
 const Sousuo = lazy(() => import('../pages/Sousuo'))
 
-// 延迟加载，运行，按需加载
-// 当切换到这个路由后 加载 lazy
-
-
-
-
+// 延迟加载，运行按需加载 当切换到这个路由后再加载 lazy
 export default function RoutesConfig() {
-
     return (
         <>
             <Routes>
