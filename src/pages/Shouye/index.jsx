@@ -1,13 +1,12 @@
 import React, { useEffect, useState } from "react";
 import VideoListBox from '../../components/VideoListBox/index'
-import './style.css'
+import { HomeWrapper } from './style.js'
 
 const Shouye = () => {
     return (
-        // <ListView>
-        <div className="m-home">
-            <VideoListBox className="video-list" />
-        </div >
+        <HomeWrapper>
+            <VideoListBox />
+        </HomeWrapper >
     )
 }
 

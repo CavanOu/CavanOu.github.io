@@ -1,11 +1,13 @@
 import React, { useEffect, useState } from "react";
-import { } from './style'
+import { Wrapper } from './style'
+import VideoListBox from '@/components/VideoListBox'
+import CannelBar from "../../components/CannelBar";
 
 const Donghua = () => {
     return (
-        <div style={{ position: 'relative', top: '100px' }}>
-            donghua
-        </div>
+        <Wrapper>
+            <VideoListBox />
+        </Wrapper >
     )
 }
 
