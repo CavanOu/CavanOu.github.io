@@ -19,8 +19,13 @@ export default function RoutesConfig() {
             <Routes>
                 <Route path='/' element={<Shouye />} />
                 <Route path='/shouye' element={<Shouye />} />
-                <Route path='/donghua' element={<Donghua />} />
-                <Route path='/fanju' element={<Fanju />} />
+                <Route path='/donghua' element={<Donghua />} >
+                    <Route path={'/donghua/:id'} element={<Donghua />} />
+                    {/* /^\/donghua\/[\d]+/ */}
+                </Route>
+                <Route path='/fanju' element={<Fanju />} >
+                    <Route path={'/fanju/:id'} element={<Donghua />} />
+                </Route>
                 <Route path='/guochuang' element={<Guochuang />} />
                 <Route path='/yinyue' element={<Yinyue />} />
                 <Route path='/wudao' element={<Wudao />} />

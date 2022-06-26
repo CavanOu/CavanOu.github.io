@@ -1,13 +1,13 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import { CardWrapper } from './style'
-import NumberFormat from '@/utils'
+import { NumberFormat } from '@/utils'
 import classnames from 'classnames'
 import protoTypes from 'prop-types'
 
 
 export default function Card({ videos = [] }) {
-    console.log(videos)
+    // console.log(videos)
     return (
         <>
             {

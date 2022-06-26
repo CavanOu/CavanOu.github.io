@@ -4,6 +4,7 @@ import VideoListBox from '@/components/VideoListBox'
 import CannelBar from "../../components/CannelBar";
 
 const Donghua = () => {
+
     return (
         <Wrapper>
             <VideoListBox />

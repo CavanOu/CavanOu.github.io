@@ -3,15 +3,16 @@ import styled from "styled-components";
 export const HeaderMenu = styled.div`
 height: 10.66667vw;
 position: relative;
-/* background: skyblue; */
 display: flex;
 font-size: 3.73333vw;
 .adm-tabs {
     --active-line-color:#FB7299;
     --active-line-height: 3px;
     --active-line-border-radius: 3px;
+    
     .adm-tabs-tab-wrapper {
         padding: 0 4.26667vw;
+        background: #fff;
     .adm-tabs-tab{
         padding: 0;
     a{
@@ -68,5 +69,37 @@ margin: 0 2.66667vw;
 `
 
 export const DrawerWrapper = styled.div`
-
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    transform: translateY(0);
+    pointer-events: auto;
+    box-sizing: content-box;
+    z-index: 1002;
+    background-color: #fff;
+    align-items: center;
+div{
+    position: relative;
+    padding: 2.66667vw 5.33333vw 5.33333vw;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    height: 100%;
+    font-size: 3.73333vw;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    a{
+        margin: 2.13333vw;
+        white-space: nowrap;
+        text-decoration: none;
+        color: #757575;
+        &.active{
+                /* & 表示上级选择器 此处表示a .active */
+                color: #FB7299;
+            }
+    }
+}
 `
