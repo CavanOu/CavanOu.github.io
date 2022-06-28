@@ -2,7 +2,7 @@ import React from 'react'
 import ReactDOM from 'react-dom/client'
 import App from './App'
 import './index.css'
-import { BrowserRouter } from 'react-router-dom'
+import { HashRouter } from 'react-router-dom'
 import './assets/fonts/iconfont.css'
 // import './assets/fonts/iconfont.css'
 import './assets/styles/reset.css'
@@ -11,7 +11,7 @@ import './modules/rem' // 自适应
 
 ReactDOM.createRoot(document.getElementById('root')).render(
 
-  <BrowserRouter>
+  < HashRouter>
     <App />
-  </BrowserRouter>
+  </ HashRouter>
 )
